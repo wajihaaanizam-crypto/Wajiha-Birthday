@@ -1,0 +1,130 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Wajiha 💕</title>
+
+<style>
+
+/* =========================================================
+   COLORS
+========================================================= */
+
+:root {
+    --pink: #ff4f9a;
+    --hot-pink: #ff2f7d;
+    --coral: #ff8066;
+    --peach: #ffb38a;
+    --purple: #8f5de8;
+    --lavender: #c9a7ff;
+    --yellow: #ffd76a;
+    --cream: #fffaf5;
+    --white: #ffffff;
+    --text: #432642;
+    --gold: #d9a441;
+}
+
+/* =========================================================
+   BASIC RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--text);
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(255,255,255,.5), transparent 25%),
+        radial-gradient(circle at 90% 80%, rgba(255,255,255,.45), transparent 25%),
+        linear-gradient(135deg, #ff7eb3, #c9a7ff 45%, #ffb38a);
+}
+
+/* =========================================================
+   BACKGROUND DECORATIONS
+========================================================= */
+
+.background-decoration {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(3px);
+    opacity: .35;
+    animation: floatBlob 10s ease-in-out infinite alternate;
+}
+
+.blob.one {
+    width: 280px;
+    height: 280px;
+    background: #ffdb7d;
+    top: -100px;
+    left: -80px;
+}
+
+.blob.two {
+    width: 350px;
+    height: 350px;
+    background: #ff75b5;
+    bottom: -160px;
+    right: -120px;
+    animation-delay: 2s;
+}
+
+.blob.three {
+    width: 220px;
+    height: 220px;
+    background: #a879ff;
+    top: 45%;
+    right: 15%;
+    animation-delay: 4s;
+}
+
+@keyframes floatBlob {
+    from {
+        transform: translate(0,0) scale(1);
+    }
+    to {
+        transform: translate(30px,-25px) scale(1.1);
+    }
+}
+
+/* =========================================================
+   FLOATING PARTICLES
+========================================================= */
+
+.particle {
+    position: fixed;
+    bottom: -30px;
+    pointer-events: none;
+    z-index: 2;
+    animation: rise linear forwards;
+    opacity: .8;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+```
